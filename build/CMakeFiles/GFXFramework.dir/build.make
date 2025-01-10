@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/napoleonsolo/gfx-framework
+CMAKE_SOURCE_DIR = /Users/napoleansolo/graphics_opengl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/napoleonsolo/gfx-framework/build
+CMAKE_BINARY_DIR = /Users/napoleansolo/graphics_opengl/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GFXFramework.dir/depend.make
@@ -73,424 +73,424 @@ CMakeFiles/GFXFramework.dir/codegen:
 .PHONY : CMakeFiles/GFXFramework.dir/codegen
 
 CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o: /Users/napoleonsolo/gfx-framework/src/components/camera_input.cpp
+CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o: /Users/napoleansolo/graphics_opengl/src/components/camera_input.cpp
 CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o -c /Users/napoleonsolo/gfx-framework/src/components/camera_input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.o -c /Users/napoleansolo/graphics_opengl/src/components/camera_input.cpp
 
 CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/components/camera_input.cpp > CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/components/camera_input.cpp > CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/components/camera_input.cpp -o CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/components/camera_input.cpp -o CMakeFiles/GFXFramework.dir/src/components/camera_input.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o: /Users/napoleonsolo/gfx-framework/src/components/scene_input.cpp
+CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o: /Users/napoleansolo/graphics_opengl/src/components/scene_input.cpp
 CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o -c /Users/napoleonsolo/gfx-framework/src/components/scene_input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.o -c /Users/napoleansolo/graphics_opengl/src/components/scene_input.cpp
 
 CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/components/scene_input.cpp > CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/components/scene_input.cpp > CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/components/scene_input.cpp -o CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/components/scene_input.cpp -o CMakeFiles/GFXFramework.dir/src/components/scene_input.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o: /Users/napoleonsolo/gfx-framework/src/components/simple_scene.cpp
+CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o: /Users/napoleansolo/graphics_opengl/src/components/simple_scene.cpp
 CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o -c /Users/napoleonsolo/gfx-framework/src/components/simple_scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.o -c /Users/napoleansolo/graphics_opengl/src/components/simple_scene.cpp
 
 CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/components/simple_scene.cpp > CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/components/simple_scene.cpp > CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/components/simple_scene.cpp -o CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/components/simple_scene.cpp -o CMakeFiles/GFXFramework.dir/src/components/simple_scene.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o: /Users/napoleonsolo/gfx-framework/src/components/text_renderer.cpp
+CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o: /Users/napoleansolo/graphics_opengl/src/components/text_renderer.cpp
 CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o -c /Users/napoleonsolo/gfx-framework/src/components/text_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o -MF CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.o -c /Users/napoleansolo/graphics_opengl/src/components/text_renderer.cpp
 
 CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/components/text_renderer.cpp > CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/components/text_renderer.cpp > CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/components/text_renderer.cpp -o CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/components/text_renderer.cpp -o CMakeFiles/GFXFramework.dir/src/components/text_renderer.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/engine.cpp
+CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/engine.cpp
 CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/engine.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/engine.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/engine.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/engine.cpp > CMakeFiles/GFXFramework.dir/src/core/engine.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/engine.cpp > CMakeFiles/GFXFramework.dir/src/core/engine.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/engine.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/engine.cpp -o CMakeFiles/GFXFramework.dir/src/core/engine.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/engine.cpp -o CMakeFiles/GFXFramework.dir/src/core/engine.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/gpu/frame_buffer.cpp
+CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/gpu/frame_buffer.cpp
 CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/gpu/frame_buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/gpu/frame_buffer.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/gpu/frame_buffer.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/gpu/frame_buffer.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/gpu/frame_buffer.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/gpu/frame_buffer.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/frame_buffer.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/gpu/gpu_buffers.cpp
+CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/gpu/gpu_buffers.cpp
 CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/gpu/gpu_buffers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/gpu/gpu_buffers.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/gpu/gpu_buffers.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/gpu/gpu_buffers.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/gpu/gpu_buffers.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/gpu/gpu_buffers.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/gpu_buffers.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/gpu/mesh.cpp
+CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/gpu/mesh.cpp
 CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/gpu/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/gpu/mesh.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/gpu/mesh.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/gpu/mesh.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/gpu/mesh.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/gpu/mesh.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/mesh.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/gpu/shader.cpp
+CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/gpu/shader.cpp
 CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/gpu/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/gpu/shader.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/gpu/shader.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/gpu/shader.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/gpu/shader.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/gpu/shader.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/shader.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/gpu/texture2D.cpp
+CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/gpu/texture2D.cpp
 CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/gpu/texture2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/gpu/texture2D.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/gpu/texture2D.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/gpu/texture2D.cpp > CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/gpu/texture2D.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/gpu/texture2D.cpp -o CMakeFiles/GFXFramework.dir/src/core/gpu/texture2D.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/managers/texture_manager.cpp
+CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/managers/texture_manager.cpp
 CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/managers/texture_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/managers/texture_manager.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/managers/texture_manager.cpp > CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/managers/texture_manager.cpp > CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/managers/texture_manager.cpp -o CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/managers/texture_manager.cpp -o CMakeFiles/GFXFramework.dir/src/core/managers/texture_manager.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/window/input_controller.cpp
+CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/window/input_controller.cpp
 CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/window/input_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/window/input_controller.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/window/input_controller.cpp > CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/window/input_controller.cpp > CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/window/input_controller.cpp -o CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/window/input_controller.cpp -o CMakeFiles/GFXFramework.dir/src/core/window/input_controller.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/window/window_callbacks.cpp
+CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.cpp
 CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/window/window_callbacks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/window/window_callbacks.cpp > CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.cpp > CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/window/window_callbacks.cpp -o CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.cpp -o CMakeFiles/GFXFramework.dir/src/core/window/window_callbacks.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/window/window_object.cpp
+CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/window/window_object.cpp
 CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/window/window_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/window/window_object.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/window/window_object.cpp > CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/window/window_object.cpp > CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/window/window_object.cpp -o CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/window/window_object.cpp -o CMakeFiles/GFXFramework.dir/src/core/window/window_object.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/core/world.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/core/world.cpp.o: /Users/napoleonsolo/gfx-framework/src/core/world.cpp
+CMakeFiles/GFXFramework.dir/src/core/world.cpp.o: /Users/napoleansolo/graphics_opengl/src/core/world.cpp
 CMakeFiles/GFXFramework.dir/src/core/world.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/world.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/world.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/world.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/world.cpp.o -c /Users/napoleonsolo/gfx-framework/src/core/world.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GFXFramework.dir/src/core/world.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/core/world.cpp.o -MF CMakeFiles/GFXFramework.dir/src/core/world.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/core/world.cpp.o -c /Users/napoleansolo/graphics_opengl/src/core/world.cpp
 
 CMakeFiles/GFXFramework.dir/src/core/world.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/core/world.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/core/world.cpp > CMakeFiles/GFXFramework.dir/src/core/world.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/core/world.cpp > CMakeFiles/GFXFramework.dir/src/core/world.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/core/world.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/core/world.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/core/world.cpp -o CMakeFiles/GFXFramework.dir/src/core/world.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/core/world.cpp -o CMakeFiles/GFXFramework.dir/src/core/world.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/2dobject.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/2dobject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/2dobject.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/2dobject.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/2dobject.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tank.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tank.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tank.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tank.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tank.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tank.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tank.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tank.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tema1.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tema1.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tema1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tema1.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tema1.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tema1.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/Tema1/Tema1.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tema1.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/Tema1/Tema1.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab1/lab1.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab1/lab1.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab1/lab1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab1/lab1.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab1/lab1.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab1/lab1.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab1/lab1.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab1/lab1.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab1/lab1.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab2/lab2.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab2/lab2.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab2/lab2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab2/lab2.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab2/lab2.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab2/lab2.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab2/lab2.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab2/lab2.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab2/lab2.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab4/lab4.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab4/lab4.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab4/lab4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab4/lab4.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab4/lab4.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab4/lab4.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab4/lab4.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab4/lab4.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab4/lab4.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/Renderer.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/Renderer.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/Renderer.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/Renderer.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/Renderer.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/Renderer.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/Renderer.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/lab5.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab5.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/lab5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab5.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/lab5.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab5.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab5/lab5.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab5.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab6/lab6.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab6/lab6.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab6/lab6.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab6/lab6.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab6/lab6.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab6/lab6.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab6/lab6.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab6/lab6.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab6/lab6.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab7/lab7.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab7/lab7.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab7/lab7.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab7/lab7.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab7/lab7.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab7/lab7.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab7/lab7.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab7/lab7.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab7/lab7.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab8/lab8.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab8/lab8.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab8/lab8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab8/lab8.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab8/lab8.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab8/lab8.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab8/lab8.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab8/lab8.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab8/lab8.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o: /Users/napoleonsolo/gfx-framework/src/lab_m1/lab9/lab9.cpp
+CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o: /Users/napoleansolo/graphics_opengl/src/lab_m1/lab9/lab9.cpp
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o -c /Users/napoleonsolo/gfx-framework/src/lab_m1/lab9/lab9.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o -MF CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.o -c /Users/napoleansolo/graphics_opengl/src/lab_m1/lab9/lab9.cpp
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/lab_m1/lab9/lab9.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/lab_m1/lab9/lab9.cpp > CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/lab_m1/lab9/lab9.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/lab_m1/lab9/lab9.cpp -o CMakeFiles/GFXFramework.dir/src/lab_m1/lab9/lab9.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/main.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/main.cpp.o: /Users/napoleonsolo/gfx-framework/src/main.cpp
+CMakeFiles/GFXFramework.dir/src/main.cpp.o: /Users/napoleansolo/graphics_opengl/src/main.cpp
 CMakeFiles/GFXFramework.dir/src/main.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/GFXFramework.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/main.cpp.o -MF CMakeFiles/GFXFramework.dir/src/main.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/main.cpp.o -c /Users/napoleonsolo/gfx-framework/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/GFXFramework.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/main.cpp.o -MF CMakeFiles/GFXFramework.dir/src/main.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/main.cpp.o -c /Users/napoleansolo/graphics_opengl/src/main.cpp
 
 CMakeFiles/GFXFramework.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/main.cpp > CMakeFiles/GFXFramework.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/main.cpp > CMakeFiles/GFXFramework.dir/src/main.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/main.cpp -o CMakeFiles/GFXFramework.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/main.cpp -o CMakeFiles/GFXFramework.dir/src/main.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o: /Users/napoleonsolo/gfx-framework/src/utils/gl_utils.cpp
+CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o: /Users/napoleansolo/graphics_opengl/src/utils/gl_utils.cpp
 CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o -MF CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o -c /Users/napoleonsolo/gfx-framework/src/utils/gl_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o -MF CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o -c /Users/napoleansolo/graphics_opengl/src/utils/gl_utils.cpp
 
 CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/utils/gl_utils.cpp > CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/utils/gl_utils.cpp > CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/utils/gl_utils.cpp -o CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/utils/gl_utils.cpp -o CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.s
 
 CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o: CMakeFiles/GFXFramework.dir/flags.make
-CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o: /Users/napoleonsolo/gfx-framework/src/utils/text_utils.cpp
+CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o: /Users/napoleansolo/graphics_opengl/src/utils/text_utils.cpp
 CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o: CMakeFiles/GFXFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o -MF CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o -c /Users/napoleonsolo/gfx-framework/src/utils/text_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o -MF CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o.d -o CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o -c /Users/napoleansolo/graphics_opengl/src/utils/text_utils.cpp
 
 CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleonsolo/gfx-framework/src/utils/text_utils.cpp > CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/napoleansolo/graphics_opengl/src/utils/text_utils.cpp > CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.i
 
 CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleonsolo/gfx-framework/src/utils/text_utils.cpp -o CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/napoleansolo/graphics_opengl/src/utils/text_utils.cpp -o CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.s
 
 # Object files for target GFXFramework
 GFXFramework_OBJECTS = \
@@ -559,15 +559,15 @@ bin/Debug/GFXFramework: CMakeFiles/GFXFramework.dir/src/main.cpp.o
 bin/Debug/GFXFramework: CMakeFiles/GFXFramework.dir/src/utils/gl_utils.cpp.o
 bin/Debug/GFXFramework: CMakeFiles/GFXFramework.dir/src/utils/text_utils.cpp.o
 bin/Debug/GFXFramework: CMakeFiles/GFXFramework.dir/build.make
-bin/Debug/GFXFramework: /Users/napoleonsolo/gfx-framework/deps/prebuilt/GFXComponents/arm64/GFXComponents.dylib
+bin/Debug/GFXFramework: /Users/napoleansolo/graphics_opengl/deps/prebuilt/GFXComponents/arm64/GFXComponents.dylib
 bin/Debug/GFXFramework: CMakeFiles/GFXFramework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/napoleonsolo/gfx-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable bin/Debug/GFXFramework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/napoleansolo/graphics_opengl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable bin/Debug/GFXFramework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GFXFramework.dir/link.txt --verbose=$(VERBOSE)
-	rm -rf /Users/napoleonsolo/gfx-framework/build/bin/Debug/src
-	ln -s /Users/napoleonsolo/gfx-framework/src /Users/napoleonsolo/gfx-framework/build/bin/Debug/src
-	rm -rf /Users/napoleonsolo/gfx-framework/build/bin/Debug/assets
-	ln -s /Users/napoleonsolo/gfx-framework/assets /Users/napoleonsolo/gfx-framework/build/bin/Debug/assets
-	/opt/homebrew/bin/cmake -E copy_if_different /Users/napoleonsolo/gfx-framework/deps/prebuilt/GFXComponents/arm64/GFXComponents.dylib /Users/napoleonsolo/gfx-framework/build/bin/Debug
+	rm -rf /Users/napoleansolo/graphics_opengl/build/bin/Debug/src
+	ln -s /Users/napoleansolo/graphics_opengl/src /Users/napoleansolo/graphics_opengl/build/bin/Debug/src
+	rm -rf /Users/napoleansolo/graphics_opengl/build/bin/Debug/assets
+	ln -s /Users/napoleansolo/graphics_opengl/assets /Users/napoleansolo/graphics_opengl/build/bin/Debug/assets
+	/opt/homebrew/bin/cmake -E copy_if_different /Users/napoleansolo/graphics_opengl/deps/prebuilt/GFXComponents/arm64/GFXComponents.dylib /Users/napoleansolo/graphics_opengl/build/bin/Debug
 
 # Rule to build all files generated by this target.
 CMakeFiles/GFXFramework.dir/build: bin/Debug/GFXFramework
@@ -578,6 +578,6 @@ CMakeFiles/GFXFramework.dir/clean:
 .PHONY : CMakeFiles/GFXFramework.dir/clean
 
 CMakeFiles/GFXFramework.dir/depend:
-	cd /Users/napoleonsolo/gfx-framework/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/napoleonsolo/gfx-framework /Users/napoleonsolo/gfx-framework /Users/napoleonsolo/gfx-framework/build /Users/napoleonsolo/gfx-framework/build /Users/napoleonsolo/gfx-framework/build/CMakeFiles/GFXFramework.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/napoleansolo/graphics_opengl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/napoleansolo/graphics_opengl /Users/napoleansolo/graphics_opengl /Users/napoleansolo/graphics_opengl/build /Users/napoleansolo/graphics_opengl/build /Users/napoleansolo/graphics_opengl/build/CMakeFiles/GFXFramework.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/GFXFramework.dir/depend
 

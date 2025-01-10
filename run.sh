@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /Users/napoleonsolo/gfx-framework/build || exit
+cd /Users/napoleansolo/graphics_opengl/build || exit
 cmake --build .
-cd /Users/napoleonsolo/gfx-framework/build/bin/Debug
+cd /Users/napoleansolo/graphics_opengl/build/bin/Debug
 ./GFXFramework 

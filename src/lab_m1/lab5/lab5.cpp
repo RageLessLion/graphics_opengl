@@ -98,7 +98,7 @@ void Lab5::Init()
     for (int i = 0; i < 20; ++i)
     {
         // Using modulo and division to create a 3x4 grid pattern
-        pillarPositions.push_back(glm::vec3(getRandomNumber(-200,200), 0.0f, getRandomNumber(-200,200)));
+        pillarPositions.push_back(glm::vec3(getRandomNumber(-200, 200), 0.0f, getRandomNumber(-200, 200)));
     }
     {
         Mesh *mesh = new Mesh("box");
@@ -160,7 +160,7 @@ void Lab5::FrameStart()
 
     glClearColor(0.53f, 0.81f, 0.92f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glViewport(0, 0, resolution.x / 2, resolution.y /2);
+    glViewport(0, 0, resolution.x, resolution.y);
     RenderPillars(pillarPositions, *drone, pillarsRadius);
 }
 
@@ -193,25 +193,66 @@ void Lab5::Update(float deltaTimeSeconds)
         }
 
         AABB pillarAABB;
-        pillarAABB.min = pillarPositions[i] - glm::vec3(pillarsRadius[i]);
-        pillarAABB.max = pillarPositions[i] + glm::vec3(pillarsRadius[i]);
+        glm::vec3 scaledRadius = glm::vec3(pillarsRadius[i] * 0.25f, pillarsRadius[i], pillarsRadius[i] * 0.25f);
+        glm::vec3 meshOffset = glm::vec3(1.0f, 0.0f, 0.0f);
+        pillarAABB.min = (pillarPositions[i] + meshOffset) - scaledRadius;
+        pillarAABB.max = (pillarPositions[i] + meshOffset) + scaledRadius;
 
         if (CheckAABBCollision(droneAABB, pillarAABB))
         {
-            std::cout << "Collision with pillar " << i << ": 1\n";
-            drone->position.x -= 0.4f;
-            drone->position.z -= 0.4f;
-            //check on which side the drone is hitting the pillar and disable movement in that direction + move in the opposite direction smoothly 
+             float deltaX = drone->position.x - pillarPositions[i].x;
+            float deltaZ = drone->position.z - pillarPositions[i].z;
+            float deltaY = drone->position.y - pillarPositions[i].y;
+            float threshold = 0.1f;
+            // if (deltaY > threshold)
+            // {
+            //     {
+            //         // Collision from the top (landing on the pillar)
+            //         drone->position.y += 0.25;
+            //     }
+            // }
+
+            // Determine collision side
+            if (std::abs(deltaX) > std::abs(deltaZ))
+            {
+                if (deltaX > 0)
+                {
+                    // Collision on the right side
+                    drone->position.x += 0.25f;
+                    drone->isMovingRight = false;
+                }
+                else
+                {
+                    // Collision on the left side
+                    drone->position.x -= 0.25f;
+                    drone->isMovingLeft = false;
+                }
+            }
+            else
+            {
+                if (deltaZ > 0)
+                {
+                    // Collision on the front side
+                    drone->position.z += 0.25f;
+                    drone->isMovingForward = false;
+                }
+                else
+                {
+                    // Collision on the back side
+                    drone->position.z -= 0.25f;
+                    drone->isMovingBackward = false;
+                }
+            }
         }
         else
         {
-            std::cout << "Collision with pillar " << i << ": 0\n";
+            //cout<<0;
         }
     }
 
     propellerRotation += deltaTimeSeconds * drone->position.y * 500;
     RenderDrone(*drone, deltaTimeSeconds, propellerRotation);
-    // RenderHelicopter(*drone, deltaTimeSeconds, propellerRotation);
+     //RenderHelicopter(*drone, deltaTimeSeconds, propellerRotation);
 
     drone->checkCollision();
     drone->resetNeutralPosition();
@@ -268,7 +309,7 @@ void Lab5::OnInputUpdate(float deltaTime, int mods)
     // drone
     drone->alignWithCamera(*camera, glm::vec3(0.0f, 2.0f, -5.0f));
     // helicopter
-    // drone->alignWithCamera(*camera, glm::vec3(-2.0f, 2.0f, -13.0f));
+     //drone->alignWithCamera(*camera, glm::vec3(-2.0f, 2.0f, -13.0f));
 }
 
 void Lab5::OnKeyPress(int key, int mods)

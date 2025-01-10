@@ -1,3 +1,3 @@
-/Users/napoleonsolo/gfx-framework/build/CMakeFiles/GFXFramework.dir
-/Users/napoleonsolo/gfx-framework/build/CMakeFiles/edit_cache.dir
-/Users/napoleonsolo/gfx-framework/build/CMakeFiles/rebuild_cache.dir
+/Users/napoleansolo/graphics_opengl/build/CMakeFiles/GFXFramework.dir
+/Users/napoleansolo/graphics_opengl/build/CMakeFiles/edit_cache.dir
+/Users/napoleansolo/graphics_opengl/build/CMakeFiles/rebuild_cache.dir
