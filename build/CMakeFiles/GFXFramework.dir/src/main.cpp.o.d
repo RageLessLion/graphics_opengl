@@ -1398,10 +1398,9 @@ CMakeFiles/GFXFramework.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/drone.h \
+  /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.h \
   /Users/napoleansolo/graphics_opengl/src/lab_m1/lab6/lab6.h \
   /Users/napoleansolo/graphics_opengl/src/lab_m1/lab7/lab7.h \
   /Users/napoleansolo/graphics_opengl/src/components/transform.h \
   /Users/napoleansolo/graphics_opengl/src/lab_m1/lab8/lab8.h \
-  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab9/lab9.h \
-  /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tema1.h \
-  /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tank.h
+  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab9/lab9.h

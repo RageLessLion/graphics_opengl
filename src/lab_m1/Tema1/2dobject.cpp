@@ -4,6 +4,46 @@
 #include "utils/gl_utils.h"
 
 
+Mesh* object2D::CreateSquareStep(
+    const std::string &name,
+    glm::vec3 leftBottomCorner,
+    float length,
+    int steps ,
+    glm::vec3 baseColor)
+{
+    Mesh* square = new Mesh(name);
+    std::vector<VertexFormat> vertices;
+    std::vector<unsigned int> indices;
+    float stepHeight = length / steps;
+
+    for (int i = 0; i < steps; ++i) {
+        float y1 = i * stepHeight;
+        float y2 = (i + 1) * stepHeight;
+
+        glm::vec3 color = baseColor + glm::vec3(0.0f, 0.05f * i, 0.0f);
+        // bottom-left corner
+        vertices.emplace_back(leftBottomCorner + glm::vec3(0.0f, y1, 0.0f), color);
+        // bottom-right corner
+        vertices.emplace_back(leftBottomCorner + glm::vec3(length, y1, 0.0f), color);
+        // top-right corner
+        vertices.emplace_back(leftBottomCorner + glm::vec3(length, y2, 0.0f), color);
+        // top-left corner
+        vertices.emplace_back(leftBottomCorner + glm::vec3(0.0f, y2, 0.0f), color);
+
+        unsigned int idx = i * 4;
+        indices.push_back(idx + 0);
+        indices.push_back(idx + 1);
+        indices.push_back(idx + 2);
+        indices.push_back(idx + 0);
+        indices.push_back(idx + 2);
+        indices.push_back(idx + 3);
+    }
+
+    square->InitFromData(vertices, indices);
+    return square;
+}
+
+
 Mesh* object2D::CreateSquare(
     const std::string &name,
     glm::vec3 leftBottomCorner,

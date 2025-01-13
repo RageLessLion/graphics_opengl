@@ -28174,6 +28174,7 @@ CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/Renderer.cpp.o
  /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.h
  /Users/napoleansolo/graphics_opengl/src/core/window/window_object.h
  /Users/napoleansolo/graphics_opengl/src/core/world.h
+ /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/drone.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab5.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab_camera.h
@@ -29571,6 +29572,8 @@ CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o
  /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.h
  /Users/napoleansolo/graphics_opengl/src/core/window/window_object.h
  /Users/napoleansolo/graphics_opengl/src/core/world.h
+ /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.h
+ /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/transform2D.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/drone.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab5.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/lab_camera.h
@@ -36356,8 +36359,7 @@ CMakeFiles/GFXFramework.dir/src/main.cpp.o
  /Users/napoleansolo/graphics_opengl/src/core/window/window_callbacks.h
  /Users/napoleansolo/graphics_opengl/src/core/window/window_object.h
  /Users/napoleansolo/graphics_opengl/src/core/world.h
- /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tank.h
- /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/Tema1.h
+ /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab1/lab1.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab2/lab2.h
  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab4/lab4.h

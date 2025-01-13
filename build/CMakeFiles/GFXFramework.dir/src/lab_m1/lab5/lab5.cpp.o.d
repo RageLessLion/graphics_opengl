@@ -1393,4 +1393,6 @@ CMakeFiles/GFXFramework.dir/src/lab_m1/lab5/lab5.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/drone.h
+  /Users/napoleansolo/graphics_opengl/src/lab_m1/lab5/drone.h \
+  /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/2dobject.h \
+  /Users/napoleansolo/graphics_opengl/src/lab_m1/Tema1/transform2D.h

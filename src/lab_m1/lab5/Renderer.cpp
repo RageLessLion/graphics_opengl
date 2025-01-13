@@ -113,8 +113,9 @@ void Lab5::RenderHelicopter(drone::Drone &drone, float deltaTimeSeconds, float p
     RenderMesh(meshes["Hblade"], shaders["VertexColor"], propellerMatrix);
 }
 
-void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds, float propellerRotation)
+void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
 {
+    glm::cout<<deltaTimeSeconds;
     Shader *grey = shaders["Color"];
     grey->Use();
     GLint colorLoc = glGetUniformLocation(grey->program, "color");
@@ -124,7 +125,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds, float propel
     }
     if (propellerRotation >= 360.0f)
         propellerRotation -= 360.0f;
-
+    drone.propellerRotation = deltaTimeSeconds * drone.position.y * 5000000;
     // Drone body, X shape
     {
         glm::mat4 modelMatrix = glm::mat4(1.0f);
@@ -220,7 +221,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds, float propel
         propellerMatrix = glm::translate(propellerMatrix, offset);
         float propellerYOffset = 0.55f;
         propellerMatrix = glm::translate(propellerMatrix, glm::vec3(0.0f, propellerYOffset, 0.0f));
-        propellerMatrix = glm::rotate(propellerMatrix, glm::radians(propellerRotation), glm::vec3(0, 1, 0));
+        propellerMatrix = glm::rotate(propellerMatrix, glm::radians(drone.propellerRotation), glm::vec3(0, 1, 0));
         propellerMatrix = glm::scale(propellerMatrix, glm::vec3(0.9f, 0.03f, 0.1f));
         
         // Collect transformed vertices

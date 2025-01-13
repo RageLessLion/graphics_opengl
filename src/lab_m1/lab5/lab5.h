@@ -3,6 +3,7 @@
 #include "lab_m1/lab5/lab_camera.h"
 #include "lab_m1/lab5/parcel.h"
 #include "lab_m1/lab5/drone.h"
+#include "lab_m1/Tema1/2dobject.h"
 
 namespace m1
 {
@@ -35,7 +36,7 @@ namespace m1
       void FrameEnd() override;
       bool CheckCollision(const glm::vec3& posA, float radiusA,const glm::vec3& posB, float radiusB);
       void RenderMesh(Mesh *mesh, Shader *shader, const glm::mat4 &modelMatrix) override;
-      void RenderDrone(drone::Drone &drone, float delaTimeSeconds, float propellerRotation);
+      void RenderDrone(drone::Drone &drone, float delaTimeSeconds);
       void RenderParcel(parcel::Parcel &parcel, drone::Drone &drone);
       void RenderHelicopter(drone::Drone &drone,float deltaTimeSeconds,float propellerRotation );
       void RenderPillars(const std::vector<glm::vec3> &pillarPositions,drone::Drone &drone,std::vector<float> &pillarsRadius);

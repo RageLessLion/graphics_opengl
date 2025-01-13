@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include "lab_m1/Tema1/transform2D.h"
 
 using namespace std;
 using namespace m1;
@@ -20,26 +21,17 @@ Lab5::~Lab5()
 {
 }
 
-struct AABB
-{
-    glm::vec3 min;
-    glm::vec3 max;
-};
+const float circleRadius = 10.0f;
+float cnt = 0;
 
-bool CheckAABBCollision(const AABB &a, const AABB &b)
-{
-    return (a.min.x <= b.max.x && a.max.x >= b.min.x) &&
-           (a.min.y <= b.max.y && a.max.y >= b.min.y) &&
-           (a.min.z <= b.max.z && a.max.z >= b.min.z);
-}
 
 std::vector<glm::vec3> pillarPositions;
 std::vector<float> pillarsRadius;
 
 double getRandomNumber(double min, double max)
 {
-    std::random_device rd;  // Seed source
-    std::mt19937 gen(rd()); // Mersenne Twister engine
+    std::random_device rd; 
+    std::mt19937 gen(rd());
     std::uniform_real_distribution<> dis(min, max);
     return dis(gen);
 }
@@ -49,7 +41,7 @@ Mesh *CreateCircleMesh(const std::string &name, unsigned int numSegments = 64, f
     std::vector<VertexFormat> vertices;
     std::vector<unsigned int> indices;
 
-    // Generate circle vertices
+    // generate circle vertices
     for (unsigned int i = 0; i <= numSegments; ++i)
     {
         float angle = 2.0f * glm::pi<float>() * i / numSegments;
@@ -66,25 +58,6 @@ Mesh *CreateCircleMesh(const std::string &name, unsigned int numSegments = 64, f
     return circle;
 }
 
-Mesh *CreateRectangleMesh(const std::string &name, float width, float height)
-{
-    std::vector<VertexFormat> vertices = {
-        VertexFormat(glm::vec3(0.0f, 0.0f, 0.0f)),    // Bottom-left
-        VertexFormat(glm::vec3(width, 0.0f, 0.0f)),   // Bottom-right
-        VertexFormat(glm::vec3(width, height, 0.0f)), // Top-right
-        VertexFormat(glm::vec3(0.0f, height, 0.0f))   // Top-left
-    };
-
-    std::vector<unsigned int> indices = {
-        0, 1, 2,
-        2, 3, 0};
-
-    Mesh *rectangle = new Mesh(name);
-    rectangle->InitFromData(vertices, indices);
-    rectangle->SetDrawMode(GL_TRIANGLES);
-    return rectangle;
-}
-
 void Lab5::Init()
 {
     renderCameraTarget = false;
@@ -95,9 +68,17 @@ void Lab5::Init()
     parcel = new parcel::Parcel();
     camera->Set(glm::vec3(0, 2, 5.5f), glm::vec3(0, 1, 0), glm::vec3(0, 1, 0));
     drone->Set(dronePosition, glm::vec3(0, 1, 0));
+
+    Mesh* circle2 = object2D::CreateCircle(
+        "circle2",
+        glm::vec3(0, 1, 0.0f),
+        circleRadius,
+        glm::vec3(0, 1, 0.0f),
+        true
+    );
+    AddMeshToList(circle2);
     for (int i = 0; i < 20; ++i)
     {
-        // Using modulo and division to create a 3x4 grid pattern
         pillarPositions.push_back(glm::vec3(getRandomNumber(-200, 200), 0.0f, getRandomNumber(-200, 200)));
     }
     {
@@ -147,9 +128,17 @@ void Lab5::Init()
         meshes[mesh->GetMeshID()] = mesh;
     }
 
+     Mesh* menu = object2D::CreateSquareStep(
+        "menu",
+        glm::vec3(-50.0f, -10.0f, 0.0f),
+        25.0f,
+        2,
+        glm::vec3(0, 1, 0.0f)
+    );
+    AddMeshToList(menu);
+
     meshes["pickup_circle"] = CreateCircleMesh("pickup_circle", 64, 5.0f);
     meshes["delivery_circle"] = CreateCircleMesh("pickup_circle", 64, 5.0f);
-    meshes["counter"] = CreateRectangleMesh("counter", 5.0f, 10.0f);
     glm::ivec2 resolution = window->GetResolution();
     miniViewportArea = ViewportArea(50, 50, resolution.x / 5.f, resolution.y / 5.f);
     projectionMatrix = glm::perspective(RADIANS(60), window->props.aspectRatio, 0.01f, 200.0f);
@@ -172,6 +161,7 @@ bool Lab5::CheckCollision(const glm::vec3 &posA, float radiusA, const glm::vec3 
 
 void Lab5::Update(float deltaTimeSeconds)
 {
+    cnt += 0.00000001;
     {
         Shader *planeShader = shaders["Plane1"];
         planeShader->Use();
@@ -180,81 +170,20 @@ void Lab5::Update(float deltaTimeSeconds)
         modelMatrix = glm::scale(modelMatrix, glm::vec3(10, 1, 10));
         RenderMesh(meshes["plane"], planeShader, modelMatrix);
     }
+     glm::mat3 lifeBarMatrix = glm::mat3(1);
+     drone->fuel -= cnt;
+     if(drone->fuel > 0.001){
+         lifeBarMatrix *= transform2D::Scale(0.05,drone->fuel);
+     } else {
+          lifeBarMatrix *= transform2D::Scale(0.05,0.001);
+     }
 
-    AABB droneAABB;
-    droneAABB.min = drone->position - glm::vec3(drone->radius);
-    droneAABB.max = drone->position + glm::vec3(drone->radius);
-    for (size_t i = 0; i < pillarPositions.size(); i++)
-    {
-        if (i >= pillarsRadius.size())
-        {
-            // safety check to prevent out-of-bounds access
-            continue;
-        }
+     RenderMesh2D(meshes["menu"], shaders["VertexColor"], lifeBarMatrix);
 
-        AABB pillarAABB;
-        glm::vec3 scaledRadius = glm::vec3(pillarsRadius[i] * 0.25f, pillarsRadius[i], pillarsRadius[i] * 0.25f);
-        glm::vec3 meshOffset = glm::vec3(1.0f, 0.0f, 0.0f);
-        pillarAABB.min = (pillarPositions[i] + meshOffset) - scaledRadius;
-        pillarAABB.max = (pillarPositions[i] + meshOffset) + scaledRadius;
+    RenderDrone(*drone, deltaTimeSeconds);
+    // RenderHelicopter(*drone, deltaTimeSeconds, propellerRotation);
 
-        if (CheckAABBCollision(droneAABB, pillarAABB))
-        {
-             float deltaX = drone->position.x - pillarPositions[i].x;
-            float deltaZ = drone->position.z - pillarPositions[i].z;
-            float deltaY = drone->position.y - pillarPositions[i].y;
-            float threshold = 0.1f;
-            // if (deltaY > threshold)
-            // {
-            //     {
-            //         // Collision from the top (landing on the pillar)
-            //         drone->position.y += 0.25;
-            //     }
-            // }
-
-            // Determine collision side
-            if (std::abs(deltaX) > std::abs(deltaZ))
-            {
-                if (deltaX > 0)
-                {
-                    // Collision on the right side
-                    drone->position.x += 0.25f;
-                    drone->isMovingRight = false;
-                }
-                else
-                {
-                    // Collision on the left side
-                    drone->position.x -= 0.25f;
-                    drone->isMovingLeft = false;
-                }
-            }
-            else
-            {
-                if (deltaZ > 0)
-                {
-                    // Collision on the front side
-                    drone->position.z += 0.25f;
-                    drone->isMovingForward = false;
-                }
-                else
-                {
-                    // Collision on the back side
-                    drone->position.z -= 0.25f;
-                    drone->isMovingBackward = false;
-                }
-            }
-        }
-        else
-        {
-            //cout<<0;
-        }
-    }
-
-    propellerRotation += deltaTimeSeconds * drone->position.y * 500;
-    RenderDrone(*drone, deltaTimeSeconds, propellerRotation);
-     //RenderHelicopter(*drone, deltaTimeSeconds, propellerRotation);
-
-    drone->checkCollision();
+    drone->checkCollision(pillarPositions,pillarsRadius);
     drone->resetNeutralPosition();
     RenderParcel(*parcel, *drone);
     if (parcel->latched)
@@ -276,12 +205,7 @@ void Lab5::Update(float deltaTimeSeconds)
         glm::vec2(parcel->delivery_position.x, parcel->delivery_position.z),
         5.0);
 
-    if (renderCameraTarget)
-    {
-        glm::mat4 modelMatrix = glm::mat4(1);
-        modelMatrix = glm::translate(modelMatrix, camera->GetTargetPosition());
-        RenderMesh(meshes["sphere"], shaders["VertexNormal"], modelMatrix);
-    }
+    
 }
 
 void Lab5::FrameEnd()
@@ -309,7 +233,7 @@ void Lab5::OnInputUpdate(float deltaTime, int mods)
     // drone
     drone->alignWithCamera(*camera, glm::vec3(0.0f, 2.0f, -5.0f));
     // helicopter
-     //drone->alignWithCamera(*camera, glm::vec3(-2.0f, 2.0f, -13.0f));
+    // drone->alignWithCamera(*camera, glm::vec3(-2.0f, 2.0f, -13.0f));
 }
 
 void Lab5::OnKeyPress(int key, int mods)
