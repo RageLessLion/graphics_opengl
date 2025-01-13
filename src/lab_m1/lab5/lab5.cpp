@@ -24,13 +24,12 @@ Lab5::~Lab5()
 const float circleRadius = 10.0f;
 float cnt = 0;
 
-
 std::vector<glm::vec3> pillarPositions;
 std::vector<float> pillarsRadius;
 
 double getRandomNumber(double min, double max)
 {
-    std::random_device rd; 
+    std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<> dis(min, max);
     return dis(gen);
@@ -69,13 +68,12 @@ void Lab5::Init()
     camera->Set(glm::vec3(0, 2, 5.5f), glm::vec3(0, 1, 0), glm::vec3(0, 1, 0));
     drone->Set(dronePosition, glm::vec3(0, 1, 0));
 
-    Mesh* circle2 = object2D::CreateCircle(
+    Mesh *circle2 = object2D::CreateCircle(
         "circle2",
         glm::vec3(0, 1, 0.0f),
         circleRadius,
         glm::vec3(0, 1, 0.0f),
-        true
-    );
+        true);
     AddMeshToList(circle2);
     for (int i = 0; i < 20; ++i)
     {
@@ -128,13 +126,12 @@ void Lab5::Init()
         meshes[mesh->GetMeshID()] = mesh;
     }
 
-     Mesh* menu = object2D::CreateSquareStep(
+    Mesh *menu = object2D::CreateSquareStep(
         "menu",
-        glm::vec3(-50.0f, -10.0f, 0.0f),
+        glm::vec3(-70.0f, -10.0f, 0.0f),
         25.0f,
         2,
-        glm::vec3(0, 1, 0.0f)
-    );
+        glm::vec3(0, 1, 0.0f));
     AddMeshToList(menu);
 
     meshes["pickup_circle"] = CreateCircleMesh("pickup_circle", 64, 5.0f);
@@ -170,20 +167,26 @@ void Lab5::Update(float deltaTimeSeconds)
         modelMatrix = glm::scale(modelMatrix, glm::vec3(10, 1, 10));
         RenderMesh(meshes["plane"], planeShader, modelMatrix);
     }
-     glm::mat3 lifeBarMatrix = glm::mat3(1);
-     drone->fuel -= cnt;
-     if(drone->fuel > 0.001){
-         lifeBarMatrix *= transform2D::Scale(0.05,drone->fuel);
-     } else {
-          lifeBarMatrix *= transform2D::Scale(0.05,0.001);
-     }
+    glm::mat3 lifeBarMatrix = glm::mat3(1);
+    float offset = (1.0f - drone->fuel);
+    drone->fuel -= cnt;
+    if (drone->fuel > 0.01)
+    {
+        lifeBarMatrix *= transform2D::Scale(0.03, drone->fuel);
+    }
+    else
+    {
+        lifeBarMatrix *= transform2D::Scale(0.03, 0.01);
+        if(drone->position.y > 0.4f)
+        drone->position.y -= deltaTimeSeconds * 2;
+        drone->propellerRotation -= (propellerRotation / 10) * deltaTimeSeconds;
+    }
 
-     RenderMesh2D(meshes["menu"], shaders["VertexColor"], lifeBarMatrix);
+    RenderMesh2D(meshes["menu"], shaders["VertexColor"], lifeBarMatrix);
 
     RenderDrone(*drone, deltaTimeSeconds);
-    // RenderHelicopter(*drone, deltaTimeSeconds, propellerRotation);
 
-    drone->checkCollision(pillarPositions,pillarsRadius);
+    drone->checkCollision(pillarPositions, pillarsRadius);
     drone->resetNeutralPosition();
     RenderParcel(*parcel, *drone);
     if (parcel->latched)
@@ -204,8 +207,6 @@ void Lab5::Update(float deltaTimeSeconds)
     drone->isDroneInsideDeliveryCircle = drone->isDroneInsideCircle(
         glm::vec2(parcel->delivery_position.x, parcel->delivery_position.z),
         5.0);
-
-    
 }
 
 void Lab5::FrameEnd()

@@ -4,25 +4,28 @@ using namespace m1;
 
 std::vector<glm::vec3> droneVertices;
 
-float Lab5::ComputeBoundingSphere(const std::vector<glm::vec3> &vertices) {
+float Lab5::ComputeBoundingSphere(const std::vector<glm::vec3> &vertices)
+{
     // Find center (e.g., average of all vertices)
     glm::vec3 center(0.0f);
-    for (auto &v : vertices) {
+    for (auto &v : vertices)
+    {
         center += v;
     }
     center /= (float)vertices.size();
 
     // Compute max distance to center
     float radius = 0.0f;
-    for (auto &v : vertices) {
+    for (auto &v : vertices)
+    {
         float dist = glm::distance(v, center);
-        if (dist > radius) {
+        if (dist > radius)
+        {
             radius = dist;
         }
     }
     return radius;
 }
-
 
 void Lab5::RenderParcel(parcel::Parcel &parcel, drone::Drone &drone)
 {
@@ -115,7 +118,8 @@ void Lab5::RenderHelicopter(drone::Drone &drone, float deltaTimeSeconds, float p
 
 void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
 {
-    glm::cout<<deltaTimeSeconds;
+    glm::cout << deltaTimeSeconds;
+    deltaTimeSeconds *= 1000000;
     Shader *grey = shaders["Color"];
     grey->Use();
     GLint colorLoc = glGetUniformLocation(grey->program, "color");
@@ -125,7 +129,8 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
     }
     if (propellerRotation >= 360.0f)
         propellerRotation -= 360.0f;
-    drone.propellerRotation = deltaTimeSeconds * drone.position.y * 5000000;
+    if (drone.fuel > 0)
+        drone.propellerRotation = deltaTimeSeconds * 10;
     // Drone body, X shape
     {
         glm::mat4 modelMatrix = glm::mat4(1.0f);
@@ -135,7 +140,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
         modelMatrix = glm::rotate(modelMatrix, RADIANS(drone.x_rotation), glm::vec3(1, 0, 0));
         modelMatrix = glm::rotate(modelMatrix, RADIANS(drone.z_rotation), glm::vec3(0, 0, 1));
         modelMatrix = glm::scale(modelMatrix, glm::vec3(2.0f, 0.3f, 0.20f));
-        
+
         // Collect transformed vertices
         for (const auto &v : meshes["box"]->positions)
         {
@@ -154,7 +159,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
         modelMatrix = glm::rotate(modelMatrix, RADIANS(drone.x_rotation), glm::vec3(1, 0, 0));
         modelMatrix = glm::rotate(modelMatrix, RADIANS(drone.z_rotation), glm::vec3(0, 0, 1));
         modelMatrix = glm::scale(modelMatrix, glm::vec3(2.0f, 0.3f, 0.20f));
-        
+
         // Collect transformed vertices
         for (const auto &v : meshes["box"]->positions)
         {
@@ -191,7 +196,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
         cubeMatrix = glm::rotate(cubeMatrix, RADIANS(drone.z_rotation), glm::vec3(0, 0, 1));
         cubeMatrix = glm::translate(cubeMatrix, offset);
         cubeMatrix = glm::scale(cubeMatrix, glm::vec3(0.25f, 1.0f, 0.25f));
-        
+
         // Collect transformed vertices
         for (const auto &v : meshes["box"]->positions)
         {
@@ -223,7 +228,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
         propellerMatrix = glm::translate(propellerMatrix, glm::vec3(0.0f, propellerYOffset, 0.0f));
         propellerMatrix = glm::rotate(propellerMatrix, glm::radians(drone.propellerRotation), glm::vec3(0, 1, 0));
         propellerMatrix = glm::scale(propellerMatrix, glm::vec3(0.9f, 0.03f, 0.1f));
-        
+
         // Collect transformed vertices
         for (const auto &v : meshes["box"]->positions)
         {
@@ -245,7 +250,7 @@ void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
     droneVertices.clear();
 }
 
-void Lab5::RenderPillars(const std::vector<glm::vec3> &pillarPositions, drone::Drone &drone,std::vector<float> &pillarsRadius)
+void Lab5::RenderPillars(const std::vector<glm::vec3> &pillarPositions, drone::Drone &drone, std::vector<float> &pillarsRadius)
 {
     Shader *grey = shaders["Color"];
     grey->Use();

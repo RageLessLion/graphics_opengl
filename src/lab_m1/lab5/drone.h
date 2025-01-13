@@ -35,8 +35,8 @@ namespace drone
             isDroneInsideDeliveryCircle = false;
             parcel;
             packetsDelivered = 0;
-            fuel = 0.05;
-            propellerRotation = 10;
+            fuel;
+            propellerRotation = 1;
         }
 
         Drone(const glm::vec3 &position)
@@ -270,9 +270,10 @@ namespace drone
             }
             else
             {
-                if (position.y > 0.1f)
+                if (position.y > 0.3f)
                 {
-                    position.y -= deltaTime;
+                    position.y -= deltaTime * 2;
+                    propellerRotation -= propellerRotation / 10;
                 }
                 else
                 {
