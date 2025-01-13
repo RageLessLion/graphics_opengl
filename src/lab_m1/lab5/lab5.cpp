@@ -158,6 +158,7 @@ bool Lab5::CheckCollision(const glm::vec3 &posA, float radiusA, const glm::vec3 
 
 void Lab5::Update(float deltaTimeSeconds)
 {
+    cout<<drone->fuel;
     cnt += 0.00000001;
     {
         Shader *planeShader = shaders["Plane1"];
@@ -167,23 +168,31 @@ void Lab5::Update(float deltaTimeSeconds)
         modelMatrix = glm::scale(modelMatrix, glm::vec3(10, 1, 10));
         RenderMesh(meshes["plane"], planeShader, modelMatrix);
     }
+
+    Shader *red = shaders["Color"];
+    red->Use();
+    GLint colorLoc = glGetUniformLocation(red->program, "color");
+    if (colorLoc != -1)
+    {
+        glUniform3f(colorLoc,255.0f / 255.0f, 0, 0);
+    }
     glm::mat3 lifeBarMatrix = glm::mat3(1);
     float offset = (1.0f - drone->fuel);
     drone->fuel -= cnt;
     if (drone->fuel > 0.01)
     {
         lifeBarMatrix *= transform2D::Scale(0.03, drone->fuel);
+        RenderMesh2D(meshes["menu"], shaders["VertexColor"], lifeBarMatrix);
     }
     else
     {
         lifeBarMatrix *= transform2D::Scale(0.03, 0.01);
         if(drone->position.y > 0.4f)
         drone->position.y -= deltaTimeSeconds * 2;
-        drone->propellerRotation -= (propellerRotation / 10) * deltaTimeSeconds;
+        drone->propellerRotation -= (propellerRotation / 1000) * deltaTimeSeconds;
+         RenderMesh2D(meshes["menu"], red, lifeBarMatrix);
     }
-
-    RenderMesh2D(meshes["menu"], shaders["VertexColor"], lifeBarMatrix);
-
+   
     RenderDrone(*drone, deltaTimeSeconds);
 
     drone->checkCollision(pillarPositions, pillarsRadius);
@@ -191,10 +200,12 @@ void Lab5::Update(float deltaTimeSeconds)
     RenderParcel(*parcel, *drone);
     if (parcel->latched)
     {
-        drone->parcel = parcel;
+        drone->parcel = parcel; 
+        drone->fuel -= cnt + (cnt / 3); 
         if (drone->parcel->delivered)
         {
             parcel = new parcel::Parcel();
+            drone->fuel += 0.05 - drone->fuel;
             RenderParcel(*parcel, *drone);
             drone->parcel = parcel;
         }

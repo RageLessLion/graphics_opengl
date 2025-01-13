@@ -118,7 +118,6 @@ void Lab5::RenderHelicopter(drone::Drone &drone, float deltaTimeSeconds, float p
 
 void Lab5::RenderDrone(drone::Drone &drone, float deltaTimeSeconds)
 {
-    glm::cout << deltaTimeSeconds;
     deltaTimeSeconds *= 1000000;
     Shader *grey = shaders["Color"];
     grey->Use();
